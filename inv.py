@@ -36,7 +36,7 @@ while True:
 mont_final = mont_inicial + soma_saida
 
 # Criando relatório
-arquivo = open('Resumo_dia1.txt', 'a', encoding='UTF-8')
+arquivo = open('Resumo_dia.txt', 'a', encoding='UTF-8')
 arquivo.write(f'{"=" * 105}\n')
 arquivo.write(f'RESUMO TRANSAÇÕES DIA {date.today()}'.center(105))
 arquivo.write(f'\n{"-" * 105}\n')
