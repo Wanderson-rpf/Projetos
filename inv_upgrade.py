@@ -8,7 +8,7 @@ def linha(valor=50):
 def leiaDinheiro(msg):
     """
     -> Função para substituir o "." por ","
-    na separação dos centavos
+    na separação dos centavos e validar o valor informado.
     :param msg: Entrada do usuário
     :return: Retorna o valor do tipo float
     """
@@ -44,9 +44,10 @@ def criaArquivo(nome):
     -> Função para criar aquivo com resumo das operações realizadas,
     com espaçamentos no cabeçalho e nas informações, incrementa o arquivo
     a cada registro, não excluindo registro anteriores.
-    :param nome: Definido na função, deve conter a extenção (exemplo: txt)
+    :param nome: Definido na função, deve conter a extenção (exemplo: teste.txt)
     :return: Cria o relatório
     """
+    global arquivo
     try:
         arquivo = open(nome, 'a', encoding='UTF-8')
     except Exception:
